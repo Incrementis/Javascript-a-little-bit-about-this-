@@ -23,6 +23,8 @@ function globalVariable()
 	
 	/*
 		ATTENTION - Context of variable "globe"
+		"this.globe" exists in the context of window, but as an "HTMLInputElement" object,
+		it offers an context in itself.
 	*/
 	results.innerHTML =  "<li>Tag:<strong> " + this.globe + "</strong></li>";
 	results.innerHTML += "<li>Context is window: " + "<strong>" + (this.globe === window.globe) + "</strong></li>";
